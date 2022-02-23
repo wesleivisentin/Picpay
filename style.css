@@ -1,3 +1,24 @@
-body{
-    background-color: rgb(107, 146, 204);
+body {
+    background-color: #4a8864;
+}
+
+.cabecalho {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.cabecalho .container {
+    display: flex;
+    align-items: center;
+
+}
+
+.cabecalho figure img {
+    width:  100%;
+    max-width: 140px;
+}
+    
+.cabecalho .cabecalho_logoPicpro {
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    margin-right: 15px;
 }
