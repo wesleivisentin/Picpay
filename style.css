@@ -22,3 +22,57 @@ body {
     border-right: 1px solid rgba(255, 255, 255, 0.4);
     margin-right: 15px;
 }
+
+.secaoDetalhesConta {
+    color: #fff;
+    padding: 60px 0 30px;
+}
+
+.secaoDetalhesConta_sobreUsuario {
+    display: flex;
+    align-items: center;
+}
+
+.secaoDetalhesConta_sobreUsuario p{
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.secaoDetalhesConta_sobreUsuario img {
+    width: 100%;
+    max-width: 50px;
+}
+
+
+.secaoDetalhesConta_sobreUsuario p strong {
+    display: block;
+    font-weight: bold;
+}
+
+.secaoDetalhesConta_sobreSaldo {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    display:flex ;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+
+}
+.secaoDetalhesConta_sobreSaldo p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.secaoDetalhesConta_sobreSaldo p strong {
+    display: block;
+    font-weight: bold;
+}
+
+.secaoDetalhesConta_sobreSaldo button {
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+}
