@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>PicPro</title>
@@ -24,32 +27,34 @@
 
     <main>
         <section class="secaoDetalhesConta">
-            <div class="secaoDetalhesConta_sobreUsuario">
-                <img src="picpro-main/assets/img/usuario.png" alt="Ícone do usuário">
-                <p>Olá, <strong>@Visitante</strong></p>
+            <div class="container">
+                <div class="secaoDetalhesConta_sobreUsuario">
+                    <img src="picpro-main/assets/img/usuario.png" alt="Ícone do usuário">
+                    <p>Olá, <strong>@Visitante</strong></p>
+                </div>
+                <div class="secaoDetalhesConta_sobreSaldo">
+                    <p>Saldo PicPay <strong>R$ 0,00</strong></p>
+                    <button>Extrato</button>
+                </div>
+                <ul class="secaoDetalhesConta_opcoesTransacoes">
+                    <li class="secaoDetalhesConta_itemtransacao">
+                        <img src="picpro-main/assets/img/qrcode.png" alt="Icone QR code">
+                        <p>QR Code</p>
+                    </li>
+                    <li class="secaoDetalhesConta_itemtransacao">
+                        <img src="picpro-main/assets/img/pix.png" alt="ícone pix">
+                        <p>Pix</p>
+                    </li>
+                    <li class="secaoDetalhesConta_itemtransacao">
+                        <img src="picpro-main/assets/img/codigo.png" alt="Ícone boleto">
+                        <p>Pagar Boleto</p>
+                    </li>
+                    <li class="secaoDetalhesConta_itemtransacao">
+                        <img src="picpro-main/assets/img/cobrar-icon.png" alt="Ícone cobrar">
+                        <p>Cobrar</p>
+                    </li>
+                </ul>
             </div>
-            <div class="secaoDetalhesConta_sobreSaldo">
-                <p>Saldo PicPay, <strong>R$ 0,00</strong></p>
-                <button>Extrato</button>
-            </div>
-            <ul class="secaoDetalhesConta_opcoesTransacoes">
-                <li class="secaoDetalhesConta_itemtransacao">
-                    <img src="picpro-main/assets/img/qrcode.png" alt="Icone QR code">
-                    <p>QR Code</p>
-                </li>
-                <li class="secaoDetalhesConta_itemtransacao">
-                    <img src="picpro-main/assets/img/pix.png" alt="ícone pix">
-                    <p>Pix</p>
-                </li>
-                <li class="secaoDetalhesConta_itemtransacao">
-                    <img src="picpro-main/assets/img/codigo.png" alt="Ícone boleto">
-                    <p>Pagar Boleto</p>
-                </li>
-                <li class="secaoDetalhesConta_itemtransacao">
-                    <img src="picpro-main/assets/img/cobrar-icon.png" alt="Ícone cobrar">
-                    <p>Cobrar</p>
-                </li>
-            </ul>
         </section>
 
         <section class="secaoTranzacao">
@@ -63,7 +68,7 @@
                     <img src="picpro-main/assets/img/qrcode-imagem.png" alt="imagem qr code">
                     <p>@usuario</p>
                     <button>Cobre um amigo</button>
-                    <a href="">compartilhar meu código</a>
+                    <a href="">ompartilhar meu código</a>
                 </div>
 
                 <div class="secaoTranzacao_pix">
@@ -99,38 +104,40 @@
     </main>
 
     <footer class="rodape">
-        <ul class="rodape+menuPrincipal">
-            <li class="rodape_menuItem">
-                <a href="#">
-                    <img src="picpro-main/assets/img/inicio.png" alt="Ícone inicio">
-                    <p>ínicio</p>
-                </a>
-            </li>
-            <li class="rodape_menuItem">
-                <a href="#">
-                    <img src="picpro-main/assets/img/carteira-icon.png" alt="Ícone carteira">
-                    <p>Carteira</p>
-                </a>
-            </li>
-            <li class="rodape_menuItem">
-                <a href="#">
-                    <img src="picpro-main/assets/img/pagar.png" alt="Ícone pagar">
-                    <p>Pagar</p>
-                </a>
-            </li>
-            <li class="rodape_menuItem">
-                <a href="#">
-                    <img src="picpro-main/assets/img/notificacao.png" alt="Ícone notificação">
-                    <p>Notificação</p>
-                </a>
-            </li>
-            <li class="rodape_menuItem">
-                <a href="#">
-                    <img src="picpro-main/assets/img/bolsa.png" alt="Ícone bolsa">
-                    <p>Store</p>
-                </a>
-            </li>
-        </ul>
+        <div class="container">
+            <ul class="rodape_menuPrincipal">
+                <li class="rodape_menuItem">
+                    <a href="#">
+                        <img src="picpro-main/assets/img/inicio.png" alt="Ícone inicio">
+                        <p>ínicio</p>
+                    </a>
+                </li>
+                <li class="rodape_menuItem">
+                    <a href="#">
+                        <img src="picpro-main/assets/img/carteira-icon.png" alt="Ícone carteira">
+                        <p>Carteira</p>
+                    </a>
+                </li>
+                <li class="rodape_menuItem rodape_menuItem--pagar">
+                    <a href="#">
+                        <img src="picpro-main/assets/img/pagar.png" alt="Ícone pagar">
+                        <p>Pagar</p>
+                    </a>
+                </li>
+                <li class="rodape_menuItem">
+                    <a href="#">
+                        <img src="picpro-main/assets/img/notificacao.png" alt="Ícone notificação">
+                        <p>Notificação</p>
+                    </a>
+                </li>
+                <li class="rodape_menuItem">
+                    <a href="#">
+                        <img src="picpro-main/assets/img/bolsa.png" alt="Ícone bolsa">
+                        <p>Store</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 
