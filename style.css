@@ -121,6 +121,13 @@ body {
     border-bottom: 15px solid #f4f4f4;
     padding: 30px 0;
 }
+.secaoTranzacao .container div{
+    display: none;
+}
+
+.secaoTranzacao .container div.mostrar{
+    display: block;
+}
 
 .secaoTranzacao_avisoSelecao p{
     
