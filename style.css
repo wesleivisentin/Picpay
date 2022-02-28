@@ -120,6 +120,7 @@ body {
     border-radius: 20px 20px 0 0;
     border-bottom: 15px solid #f4f4f4;
     padding: 30px 0;
+    min-height: 455px;
 }
 .secaoTranzacao .container div{
     display: none;
