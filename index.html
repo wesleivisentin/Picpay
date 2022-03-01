@@ -29,29 +29,50 @@
         <section class="secaoDetalhesConta">
             <div class="container">
                 <div class="secaoDetalhesConta_sobreUsuario">
-                    <img src="picpro-main/assets/img/usuario.png" alt="Ícone do usuário">
-                    <p>Olá, <strong>@Visitante</strong></p>
+                    <div class="secaoDetalhesConta_sobreUsuario--nome">
+                        <img src="picpro-main/assets/img/usuario.png" alt="Ícone do usuário">
+                        <p>Olá, <strong>@wesleivisentin</strong></p>
+                    </div>
+                    <div class="secaoDetalhesConta_sobreUsuario--icones">
+                        <img src="picpro-main/assets/img/presente.png" alt="icone de presente">
+                        <img src="picpro-main/assets/img/chat.png" alt="icone de chat">
+                    </div>
                 </div>
+
                 <div class="secaoDetalhesConta_sobreSaldo">
-                    <p>Saldo PicPay <strong>R$ 0,00</strong></p>
+                    <div>
+                        <p>Saldo PicPay </p>
+                        <div class="secaoDetalhesConta_sobreSaldo--valor">
+                            <p><strong>R$ 0,00</strong></p>
+                            <img src="picpro-main/assets/img/visualizar.png" alt="icone olho">
+                        </div>
+                    </div>
                     <button>Extrato</button>
                 </div>
-                
+
                 <ul class="secaoDetalhesConta_opcoesTransacoes">
-                    <li class="secaoDetalhesConta_itemtransacao" id="1">
-                        <img src="picpro-main/assets/img/qrcode.png" alt="Icone QR code">
+                    <li class="secaoDetalhesConta_itemtransacao secaoDetalhesConta_itemtransacao--qrcode" id="1">
+                        <figure>
+                            <img src="picpro-main/assets/img/qrcode.png" alt="Icone QR code">
+                        </figure>
                         <p>QR Code</p>
                     </li>
-                    <li class="secaoDetalhesConta_itemtransacao" id="2">
-                        <img src="picpro-main/assets/img/pix.png" alt="ícone pix">
+                    <li class="secaoDetalhesConta_itemtransacao secaoDetalhesConta_itemtransacao--pix" id="2">
+                        <figure>
+                            <img src="picpro-main/assets/img/pix.png" alt="ícone pix">
+                        </figure>
                         <p>Pix</p>
                     </li>
-                    <li class="secaoDetalhesConta_itemtransacao" id="3">
-                        <img src="picpro-main/assets/img/codigo.png" alt="Ícone boleto">
+                    <li class="secaoDetalhesConta_itemtransacao secaoDetalhesConta_itemtransacao--boleto" id="3">
+                        <figure>
+                            <img src="picpro-main/assets/img/codigo.png" alt="Ícone boleto">
+                        </figure>
                         <p>Pagar Boleto</p>
                     </li>
-                    <li class="secaoDetalhesConta_itemtransacao" id="4">
-                        <img src="picpro-main/assets/img/cobrar-icon.png" alt="Ícone cobrar">
+                    <li class="secaoDetalhesConta_itemtransacao secaoDetalhesConta_itemtransacao--cobrar" id="4">
+                        <figure>
+                            <img src="picpro-main/assets/img/cobrar-icon.png" alt="Ícone cobrar">
+                        </figure>
                         <p>Cobrar</p>
                     </li>
                 </ul>
@@ -69,7 +90,7 @@
                     <img src="picpro-main/assets/img/qrcode-imagem.png" alt="imagem qr code">
                     <p>@usuario</p>
                     <button>Cobre um amigo</button>
-                    <a href="">ompartilhar meu código</a>
+                    <a href="">Compartilhar meu código</a>
                 </div>
 
                 <div data-id="2" class="secaoTranzacao_pix">
