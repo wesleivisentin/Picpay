@@ -138,7 +138,7 @@ body {
     padding: 30px 0;
     min-height: 455px;
 }
-.secaoTranzacao .container div{
+.secaoTranzacao .container > div{
     display: none;
 }
 
